@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html class="index">
 
 <head>
-    <title>I'm the real Brandino!</title>
+    <title>Brandon [Snobino] Williams Portfolio</title>
 
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
 
@@ -19,37 +19,135 @@
 
 </head>
 
-<body>
-
-    <div class="container">
-        <div class="row">
+<body class="index">
+    <div class="container index">
+        <div class="row mt-5">
             <div class="col-md-6">
 
                 <img src="https://devilcry3.github.io/Public/content/MarineBall.jpg" class="img-fluid"
-                    alt="Brandon Williams In a gray pin stripe suite"></a>
+                    alt="Brandon Williams In a gray pin stripe suite">
             </div>
-            <div class="col-md-6">
-                <h1>Brandon Williams</h1>
-                <p>
-                    I consist of a broad range of experience built upon a core of military service working on aircraft propulsion engines. 
-                    During my service I had things such as time management, team work, problem solving and troubleshooting complex system 
-                    instilled in me. Since then I have worked on several large scale projects through video game QA at Lionbridge Games Boise, 
-                    such as award winning title Life Is Strange True Colors. I have been focusing on personal development through Boise State 
-                    University's Games, Interactive Media, and Mobile Technology design. During my time at GIMM I have broaden my experience 
-                    with game development experience, an expansion of code languages, Web dev, UX , AR/VR, and some improvement on my artistic 
-                    skills. Giving me a broad and rounded knowledge on all aspects of developmental process to better assist in any project I 
-                    am a part of.
 
-                </p>
+            <div class="col-md-6">
+                <h1 class="typing"><span>Brandon Williams</span></h1>
+                <p id="typing"></p>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-6"></div>
-            <div class="col-md-6 fanttext">Insert Here</div>
+        <div class="row mt-5 ">
+            <div class="col-md-6  ">
+                <div class="row mt-5 ">
+                    <div class="col-md-5 mb-4"></div>
+                    <div class="project col-md-5 mb-4 console-reveal reveal-delay-1">
+                        <a href="debug_console_portfolio_demo.html" class="thumb">
+                            <img src="https://devilcry3.github.io/Public/content/BardoExperiment.jpg" class="img-fluid"
+                                alt="Brandon Williams In a gray pin stripe suite">
+                            <div class="console">
+                                <span class="log-ok">[TOPIC] Emptiness of a Atom</span>
+                                <span class="log-ok">[THEME] 5 Stages of grief</span>
+                                <span class="log-warn">[TEAM] 4 person team</span>
+                                <span class="log-ok">[GOAL] Story telling complex topic</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-md-5 mb-4"></div>
+                    <div class="project col-md-5 mb-4 console-reveal reveal-delay-3">
+                        <a href="debug_console_portfolio_demo.html" class="thumb">
+                            <img src="https://devilcry3.github.io/Public/content/MarineBall.jpg" class="img-fluid"
+                                alt="Brandon Williams In a gray pin stripe suite">
+                            <div class="console">
+                                <span class="log-ok">[PASS] Player movement validated</span>
+                                <span class="log-ok">[PASS] Collision detection stable</span>
+                                <span class="log-warn">[WARN] Minor animation jitter</span>
+                                <span class="log-ok">[PASS] Build compiled successfully</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="row mt-5">
+                    <div class="col-md-3 mb-4"></div>
+                    <div class="project col-md-5 mb-4 console-reveal reveal-delay-2">
+                        <a href="debug_console_portfolio_demo.html" class="thumb">
+                            <img src="https://devilcry3.github.io/Public/content/MarineBall.jpg" class="img-fluid"
+                                alt="Brandon Williams In a gray pin stripe suite">
+                            <div class="console">
+                                <span class="log-ok">[PASS] Player movement validated</span>
+                                <span class="log-ok">[PASS] Collision detection stable</span>
+                                <span class="log-warn">[WARN] Minor animation jitter</span>
+                                <span class="log-ok">[PASS] Build compiled successfully</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-md-3 mb-4"></div>
+                    <div class="project col-md-5 mb-4 console-reveal reveal-delay-4">
+                        <a href="debug_console_portfolio_demo.html" class="thumb">
+                            <img src="https://devilcry3.github.io/Public/content/MarineBall.jpg" class="img-fluid"
+                                alt="Brandon Williams In a gray pin stripe suite">
+                            <div class="console">
+                                <span class="log-ok">[PASS] Player movement validated</span>
+                                <span class="log-ok">[PASS] Collision detection stable</span>
+                                <span class="log-warn">[WARN] Minor animation jitter</span>
+                                <span class="log-ok">[PASS] Build compiled successfully</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    </div>
     <script>
-        //Java script goes here
+
+        /*--------------------------------------
+        --------------------------------------
+                creates a typing effect for P
+        --------------------------------------
+        --------------------------------------*/
+        const text = `My experience consists of a broad range built upon a core of military service working on aircraft propulsion engines. During my service skills like time management, team work, problem solving and troubleshooting complex system were instilled in me. Since then I have worked on several large scale projects through video game QA at Lionbridge Games Boise, such as award winning title Life Is Strange True Colors. I have been focusing on the further development of skills and experience through Boise State University's Games, Interactive Media, and Mobile Technology design. During my time at GIMM I have broaden my experience with game development experience, an expansion of code languages, Web dev, UX , AR/VR, and some improvement on my artistic skills. Giving me a broad and rounded knowledge on all aspects of developmental process to better assist in any project I am a part of.`;
+
+        const para = document.getElementById('typing');
+        let i = 0;
+
+        function type() {
+            if (i < text.length) {
+                para.innerHTML += text[i] === '\n' ? '<br>' : text[i];
+                i++;
+                setTimeout(type, 40); // typing speed (ms per character)
+            }
+        }
+        setTimeout(type, 560);
+
+
+        /*--------------------------------------
+        --------------------------------------
+                typing forward anim control
+        --------------------------------------
+        --------------------------------------*/
+
+        const span = document.querySelector('.typing span');
+
+        let showCursor = true;
+
+        // Blink cursor every 500ms while typing
+        const blinkInterval = setInterval(() => {
+            span.style.borderRight = showCursor ? '2px solid #00ff9c' : 'none';
+            showCursor = !showCursor;
+        }, 500);
+
+        // Stop blinking exactly when typing ends
+        span.addEventListener('animationend', (e) => {
+            if (e.animationName === 'typing') {
+                clearInterval(blinkInterval);   // stop blinking
+                span.style.borderRight = 'none'; // remove cursor completely
+            }
+        });
     </script>
 </body>
 

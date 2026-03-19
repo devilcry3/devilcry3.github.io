@@ -1,18 +1,85 @@
-/*
-General START
-*/
+/*--------------------------------------
+--------------------------------------
+        Animations
+--------------------------------------
+--------------------------------------*/
+/* Fade-in animation */
+/* Console vertical reveal */
+@keyframes consoleReveal {
+  from {
+    clip-path: inset(0 100% 0 0);
+    /* fully hidden from bottom */
+  }
 
-/* Basic Reset */
+  to {
+    clip-path: inset(0 0 0 0);
+    /* fully visible */
+  }
+}
+
+/* starting hidden state */
+.console-reveal {
+  clip-path: inset(0 100% 0 0);
+  animation: consoleReveal 2s ease-out forwards;
+}
+
+
+/* Delay modifiers */
+.reveal-delay-1 {animation-delay: 2s;}
+
+.reveal-delay-2 {animation-delay: 4.2s;}
+
+.reveal-delay-3 {animation-delay: 6.4s;}
+
+.reveal-delay-4 {animation-delay: 8.6s;}
+
+/*---------------------------------------------------------*/
+/* Typing animation */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+.typing span {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  border-right: 2px solid #00ff9c; /* start cursor visible */
+  animation: typing 2s steps(20, end) forwards;
+}
+/*---------------------------------------------------------*/
+
+/*blinking animation for a cursor*/
+@keyframes blinkCursor {
+  0%, 100% { border-color: transparent; }
+  50% { border-color: #00ff9c; }
+}
+
+
+
+
+/*--------------------------------------
+--------------------------------------
+        General START
+--------------------------------------
+--------------------------------------*/
 * {
+  /* Basic Reset */
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Page Defaults */
 body {
   font-family: 'EB Garamond', serif;
-  line-height: 1.5;
+  font-size: 24px;
+  line-height: 1.2;
   padding: 20px;
 }
 
@@ -25,7 +92,6 @@ h3 {
 
 p {
   padding: 5px;
-
   margin-bottom: 10px;
 }
 
@@ -44,14 +110,131 @@ img {
   max-width: 100%;
   height: auto;
 }
+
 .ribbon {
-    height: 12px;
-    background-color: #1E261F;
+  height: 12px;
+  background-color: #1E261F;
 }
 
-.fanttext{
+.thumb {
+  display: block;
+  overflow: hidden;
+  border: 1px solid #00ff9c;
+}
+
+.thumb img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+
+}
+
+.thumb:hover img {
+  transform: scale(1.05);
+}
+
+.fanttext {
   font-family: "Copperplate Gothic", "Copperplate", fantasy;
 }
-/*
-///////////////////////////////////////////////////////
-*/
+
+/*--------------------------------------
+--------------------------------------
+        index page stylesheet
+-------------------------------------
+-------------------------------------*/
+.container.index {
+  /*background-color: #005f73 , background: #0d1117;*/
+
+  color: #00ff9c;
+  background: radial-gradient(circle, #0a1313 0%, #000000 100%);
+  border-radius: 20px;
+  /* rounded corners */
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 255, 156, 0.3), /* subtle glow */
+              inset 0 0 10px rgba(255, 255, 255, 0.05); /* inner highlight */
+}
+
+
+body.index {
+
+  background-image: url("./content/Matrix wallpaper gif.gif");
+  background-size: 100% auto;
+  /* stretch width only */
+  background-repeat: repeat;
+  background-size: auto;
+  /* <a href='https://pngtree.com/freebackground/aged-parchment-paper-with-darkened-edges-and-intersecting-lines-creating-vintage-antique-historical-texture_19137841.html'>free background photos from pngtree.com/</a> */
+
+}
+
+
+
+
+
+/*--------------------------------------
+-------------------------------------
+       CONSOLE EFFECT
+--------------------------------------
+-------------------------------------*/
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.project {
+  position: relative;
+  border: 1px solid #00ff9c;
+  overflow: hidden;
+  background: #010409;
+  cursor: pointer;
+
+}
+
+.project img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+.console {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.9);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 5px;
+  font-size: 0.85rem;
+  white-space: pre-line;
+}
+
+.project:hover img {opacity: 0.2;}
+
+.project:hover .console {opacity: 1;}
+
+.log-ok {color: #00ff9c;}
+
+.log-warn {color: #ffaa00;}
+
+.log-error {color: #ff4d4d;}
+
+@keyframes typing {
+  from {width: 0}
+
+  to {width: 100%}
+}
+
+.console span {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #00ff9c;
+  width: 0;
+}
+
+.project:hover .console span {
+  animation: typing 1.5s steps(40, end) forwards, blinkCursor 0.4s step-end infinite;;
+}
