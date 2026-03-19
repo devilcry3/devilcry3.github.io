@@ -11,17 +11,21 @@ General START
 
 /* Page Defaults */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'EB Garamond', serif;
   line-height: 1.5;
   padding: 20px;
 }
 
 /* Basic spacing */
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin-bottom: 10px;
 }
 
 p {
+  padding: 5px;
+
   margin-bottom: 10px;
 }
 
@@ -40,6 +44,14 @@ img {
   max-width: 100%;
   height: auto;
 }
+.ribbon {
+    height: 12px;
+    background-color: #1E261F;
+}
+
+.fanttext{
+  font-family: "Copperplate Gothic", "Copperplate", fantasy;
+}
 /*
-END
+///////////////////////////////////////////////////////
 */
