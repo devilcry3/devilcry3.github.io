@@ -16,20 +16,32 @@
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="Portfolio.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
 </head>
 
-<body class="index">
+<body class="index sofia">
     <div class="container index">
         <div class="row mt-5">
-            <div class="col-md-6">
 
-                <img src="https://devilcry3.github.io/Public/content/MarineBall.jpg" class="img-fluid"
-                    alt="Brandon Williams In a gray pin stripe suite">
+            <div class="col-md-6 project">
+                <a href="debug_console_portfolio_demo.html">
+                    <img src="https://devilcry3.github.io/Public/content/MarineBall.jpg" class="img-fluid"
+                        alt="Brandon Williams In a gray pin stripe suite, resume link">
+                    <div class="console">
+                        <span class="log-ok">[LINK] Links to Resume and Cover letter</span>
+                        <span class="log-ok">[CODE LANGUAGES] C#, Javascript, Xcode/Swift, Html/CSS</span>
+                        <span class="log-ok">[SYSTEMS] Jira, Unity, Unreal, Xcode, TestRail</span>
+                        <span class="log-warn">[Favorites] Jira, Javascript, Excel, Creative/Interesting Systems</span>
+                        <span class="log-error">[Experience] Military, Game QA, Limited hired program development</span>
+                    </div>
+                </a>
             </div>
 
             <div class="col-md-6">
-                <h1 class="typing"><span>Brandon Williams</span></h1>
+
+                <h1 class="typing"><span><button id="skipAnimation" style="margin-bottom:20px;"><i class="fa-solid fa-terminal"></i></button> <a href="debug_console_portfolio_demo.html" class="link-text"> Brandon Williams</h1><h3 class="blueh">Development and Technical Lead | Game/App Development | Junior software engineer</h3></span></a>
                 <p id="typing"></p>
             </div>
         </div>
@@ -40,12 +52,14 @@
                     <div class="project col-md-5 mb-4 console-reveal reveal-delay-1">
                         <a href="debug_console_portfolio_demo.html" class="thumb">
                             <img src="https://devilcry3.github.io/Public/content/BardoExperiment.jpg" class="img-fluid"
-                                alt="Brandon Williams In a gray pin stripe suite">
+                                alt="mono eyed monochromatic face in center surrounded by 5 atom symbols a green, purple, blue, red, and orange">
                             <div class="console">
+                                <span class="log-ok">[ARTIFACT 1] Bardo Experiment</span>
                                 <span class="log-ok">[TOPIC] Emptiness of a Atom</span>
                                 <span class="log-ok">[THEME] 5 Stages of grief</span>
-                                <span class="log-warn">[TEAM] 4 person team</span>
-                                <span class="log-ok">[GOAL] Story telling complex topic</span>
+                                <span class="log-error">[TEAM] 4 person team</span>
+                                <span class="log-warn">[GOAL] Story telling complex topic</span>
+
                             </div>
                         </a>
                     </div>
@@ -104,49 +118,78 @@
     </div>
     </div>
     <script>
+        document.addEventListener('DOMContentLoaded', () => {
 
-        /*--------------------------------------
-        --------------------------------------
-                creates a typing effect for P
-        --------------------------------------
-        --------------------------------------*/
-        const text = `My experience consists of a broad range built upon a core of military service working on aircraft propulsion engines. During my service skills like time management, team work, problem solving and troubleshooting complex system were instilled in me. Since then I have worked on several large scale projects through video game QA at Lionbridge Games Boise, such as award winning title Life Is Strange True Colors. I have been focusing on the further development of skills and experience through Boise State University's Games, Interactive Media, and Mobile Technology design. During my time at GIMM I have broaden my experience with game development experience, an expansion of code languages, Web dev, UX , AR/VR, and some improvement on my artistic skills. Giving me a broad and rounded knowledge on all aspects of developmental process to better assist in any project I am a part of.`;
+            // -------------------------------
+            // Variables
+            // -------------------------------
+            const text = `My experience consists of a broad range built upon a core of military service working on aircraft propulsion engines. During my service skills like time management, team work, problem solving and troubleshooting complex system were instilled in me. Since then I have worked on several large scale projects through video game QA at Lionbridge Games Boise, such as award winning title Life Is Strange True Colors. I have been focusing on the further development of skills and experience through Boise State University's Games, Interactive Media, and Mobile Technology design. During my time at GIMM I have broadened my experience with game development experience, an expansion of code languages, Web dev, UX , AR/VR, and some improvement on my artistic skills. Giving me a broad and rounded knowledge on all aspects of developmental process to better assist in any project I am a part of.`;
 
-        const para = document.getElementById('typing');
-        let i = 0;
+            const para = document.getElementById('typing');
+            const nameSpan = document.querySelector('.typing span'); // contains the <a>
+            const skipButton = document.getElementById('skipAnimation');
 
-        function type() {
-            if (i < text.length) {
-                para.innerHTML += text[i] === '\n' ? '<br>' : text[i];
-                i++;
-                setTimeout(type, 40); // typing speed (ms per character)
-            }
-        }
-        setTimeout(type, 560);
+            // -------------------------------
+            // H1 blinking cursor
+            // -------------------------------
+            let showCursor = true;
+            const blinkInterval = setInterval(() => {
+                nameSpan.style.borderRight = showCursor ? '2px solid #00ff9c' : 'none';
+                showCursor = !showCursor;
+            }, 500);
 
+            // -------------------------------
+            // H1 typing animation via CSS
+            // -------------------------------
+            nameSpan.addEventListener('animationend', (e) => {
+                if (e.animationName === 'typing') {
+                    clearInterval(blinkInterval);
+                    nameSpan.style.borderRight = 'none';
+                }
+            });
 
-        /*--------------------------------------
-        --------------------------------------
-                typing forward anim control
-        --------------------------------------
-        --------------------------------------*/
+            // -------------------------------
+            // Paragraph typing
+            // -------------------------------
+            let i = 0;
+            const typingInterval = setInterval(() => {
+                if (i < text.length) {
+                    para.innerHTML += text[i] === '\n' ? '<br>' : text[i];
+                    i++;
+                } else {
+                    clearInterval(typingInterval);
+                }
+            }, 40);
 
-        const span = document.querySelector('.typing span');
+            // -------------------------------
+            // Skip button
+            // -------------------------------
+            skipButton.addEventListener('click', () => {
 
-        let showCursor = true;
+                // Stop paragraph typing
+                clearInterval(typingInterval);
 
-        // Blink cursor every 500ms while typing
-        const blinkInterval = setInterval(() => {
-            span.style.borderRight = showCursor ? '2px solid #00ff9c' : 'none';
-            showCursor = !showCursor;
-        }, 500);
+                // Show full paragraph text (preserve line breaks)
+                para.innerHTML = text.replace(/\n/g, '<br>');
 
-        // Stop blinking exactly when typing ends
-        span.addEventListener('animationend', (e) => {
-            if (e.animationName === 'typing') {
-                clearInterval(blinkInterval);   // stop blinking
-                span.style.borderRight = 'none'; // remove cursor completely
-            }
+                // Stop H1 cursor blinking
+                clearInterval(blinkInterval);
+
+                // Reveal full H1 text WITHOUT touching <a> element
+                nameSpan.style.width = '100%';       // expand fully
+                nameSpan.style.overflow = 'visible'; // prevent clipping
+                nameSpan.style.borderRight = 'none'; // remove blinking cursor
+
+                // Stop console-reveal animations
+                document.querySelectorAll('.console-reveal').forEach(el => {
+                    el.style.clipPath = 'inset(0 0 0 0)';
+                    el.style.animation = 'none';
+                });
+
+                // Hide skip button after use
+                skipButton.style.display = 'none';
+            });
+
         });
     </script>
 </body>
