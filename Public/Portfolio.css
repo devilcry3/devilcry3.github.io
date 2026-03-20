@@ -121,6 +121,7 @@ h3.blueh{
   color:#20ad9a
 }
 
+
 p {
   padding: 4px;
   margin-bottom: 10px;
@@ -131,7 +132,6 @@ a {
   color: blue;
   text-decoration: none;
 }
-
 
 a:hover {
   text-decoration: underline;
@@ -190,11 +190,11 @@ img {
   /*background-color: #005f73 , background: #0d1117;*/
 
   color: #00ff9c;
-  background: radial-gradient(circle, #0a1313 0%, #000000 100%);
+  background: radial-gradient(circle, #3379e2b9 0%, #000000 100%);
   border-radius: 20px;
   /* rounded corners */
   padding: 20px;
-  box-shadow: 0 0 15px rgba(0, 255, 156, 0.3), /* subtle glow */
+  box-shadow: 0 0 15px rgba(4, 255, 159, 0.568), /* subtle glow */
               inset 0 0 10px rgba(255, 255, 255, 0.05); /* inner highlight */
 }
 
@@ -209,6 +209,28 @@ body.index {
   /* <a href='https://pngtree.com/freebackground/aged-parchment-paper-with-darkened-edges-and-intersecting-lines-creating-vintage-antique-historical-texture_19137841.html'>free background photos from pngtree.com/</a> */
 
 }
+
+
+
+
+
+
+/*--------------------------------------
+-------------------------------------
+       CONSOLE EFFECT
+--------------------------------------
+-------------------------------------*/
+body.bardo {
+
+  background-image: url("./content/BardoExperiment.jpg");
+  background-size: 100% auto;
+  /* stretch width only */
+  background-repeat: repeat;
+  background-size: auto;
+  /* <a href='https://pngtree.com/freebackground/aged-parchment-paper-with-darkened-edges-and-intersecting-lines-creating-vintage-antique-historical-texture_19137841.html'>free background photos from pngtree.com/</a> */
+
+}
+
 
 
 
