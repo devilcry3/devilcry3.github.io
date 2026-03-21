@@ -194,7 +194,7 @@ img {
   border-radius: 20px;
   /* rounded corners */
   padding: 20px;
-  box-shadow: 0 0 15px rgba(4, 255, 159, 0.568), /* subtle glow */
+  box-shadow: 0 0 15px rgba(55, 230, 84, 0.568), /* subtle glow */
               inset 0 0 10px rgba(255, 255, 255, 0.05); /* inner highlight */
 }
 
@@ -217,9 +217,21 @@ body.index {
 
 /*--------------------------------------
 -------------------------------------
-       CONSOLE EFFECT
+       Bardo Experiment Page
 --------------------------------------
 -------------------------------------*/
+.container.bardo {
+  /*background-color: #005f73 , background: #0d1117;*/
+
+  color: #00ff9c;
+  background: radial-gradient(circle, #3379e2b9 0%, #000000 100%);
+  border-radius: 20px;
+  /* rounded corners */
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(231, 1, 1, 0.568), /* subtle glow */
+              inset 0 0 10px rgba(255, 255, 255, 0.05); /* inner highlight */
+}
+
 body.bardo {
 
   background-image: url("./content/BardoExperiment.jpg");
@@ -229,6 +241,12 @@ body.bardo {
   background-size: auto;
   /* <a href='https://pngtree.com/freebackground/aged-parchment-paper-with-darkened-edges-and-intersecting-lines-creating-vintage-antique-historical-texture_19137841.html'>free background photos from pngtree.com/</a> */
 
+}
+
+iframe.sc{
+  position: relative; 
+  padding-bottom: 56%; 
+  height: 0;
 }
 
 
