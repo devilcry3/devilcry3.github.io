@@ -25,19 +25,32 @@
 
 
 /* Delay modifiers */
-.reveal-delay-1 {animation-delay: 2s;}
+.reveal-delay-1 {
+  animation-delay: 2s;
+}
 
-.reveal-delay-2 {animation-delay: 4.2s;}
+.reveal-delay-2 {
+  animation-delay: 4.2s;
+}
 
-.reveal-delay-3 {animation-delay: 6.4s;}
+.reveal-delay-3 {
+  animation-delay: 6.4s;
+}
 
-.reveal-delay-4 {animation-delay: 8.6s;}
+.reveal-delay-4 {
+  animation-delay: 8.6s;
+}
 
 /*---------------------------------------------------------*/
 /* Typing animation */
 @keyframes typing {
-  from { width: 0; }
-  to { width: 100%; }
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
 }
 
 .typing span {
@@ -45,35 +58,51 @@
   overflow: hidden;
   white-space: nowrap;
   width: 0;
-  border-right: 2px solid #00ff9c; /* start cursor visible */
+  border-right: 2px solid #00ff9c;
+  /* start cursor visible */
   animation: typing 2s steps(20, end) forwards;
 }
+.skipan-but{
+  margin-bottom:20px;
+}
+
 /*---------------------------------------------------------*/
 
 /*blinking animation for a cursor*/
 @keyframes blinkCursor {
-  0%, 100% { border-color: transparent; }
-  50% { border-color: #00ff9c; }
+
+  0%,
+  100% {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: #00ff9c;
+  }
 }
 
 
 /*----------------------------------------------------------*/
 #skipAnimation {
-    background-color: #000;       /* black background */
-    color: #00ff9c;               /* green text/icon */
-    border: 1px solid #00ff9c;
-    padding: 8px 16px;
-    font-size: 18px;
-    border-radius: 5px;
-    cursor: pointer;
-    display: inline-flex;         /* align icon + text */
-    align-items: center;
-    gap: 8px;                     /* spacing between icon and text */
+  background-color: #000;
+  /* black background */
+  color: #00ff9c;
+  /* green text/icon */
+  border: 1px solid #00ff9c;
+  padding: 8px 16px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-flex;
+  /* align icon + text */
+  align-items: center;
+  gap: 8px;
+  /* spacing between icon and text */
 }
 
 #skipAnimation:hover {
-    background-color: #00ff9c;
-    color: #000;
+  background-color: #00ff9c;
+  color: #000;
 }
 
 
@@ -111,14 +140,16 @@ body.sofia {
   line-height: 1.2;
   padding: 20px;
 }
+
 /* Basic spacing */
 h1,
 h2,
 h3 {
   margin-bottom: 10px;
 }
-h3.blueh{
-  color:#20ad9a
+
+h3.blueh {
+  color: #20ad9a
 }
 
 
@@ -136,15 +167,21 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
 .link-text {
-  color: inherit;           /* looks like surrounding text */
-  text-decoration: none;    /* remove underline */
-  transition: color 0.3s, text-decoration 0.3s; /* smooth hover */
+  color: inherit;
+  /* looks like surrounding text */
+  text-decoration: none;
+  /* remove underline */
+  transition: color 0.3s, text-decoration 0.3s;
+  /* smooth hover */
 }
 
 .link-text:hover {
-  color: #6503e6;           /* change color on hover */
-  text-decoration: underline; /* optional underline */
+  color: #6503e6;
+  /* change color on hover */
+  text-decoration: underline;
+  /* optional underline */
   cursor: pointer;
 }
 
@@ -190,12 +227,14 @@ img {
   /*background-color: #005f73 , background: #0d1117;*/
 
   color: #00ff9c;
-  background: radial-gradient(circle, #3379e2b9 0%, #000000 100%);
+  background: radial-gradient(circle, #182c26b9 0%, #000000 100%);
   border-radius: 20px;
   /* rounded corners */
   padding: 20px;
-  box-shadow: 0 0 15px rgba(55, 230, 84, 0.568), /* subtle glow */
-              inset 0 0 10px rgba(255, 255, 255, 0.05); /* inner highlight */
+  box-shadow: 0 0 15px rgba(55, 230, 84, 0.568),
+    /* subtle glow */
+    inset 0 0 10px rgba(255, 255, 255, 0.05);
+  /* inner highlight */
 }
 
 
@@ -206,11 +245,13 @@ body.index {
   /* stretch width only */
   background-repeat: repeat;
   background-size: auto;
-  /* <a href='https://pngtree.com/freebackground/aged-parchment-paper-with-darkened-edges-and-intersecting-lines-creating-vintage-antique-historical-texture_19137841.html'>free background photos from pngtree.com/</a> */
+  /* <a href='https://www.pinterest.com/pin/1196337402506232/'>free background photos from pinterist.com/</a> */
 
 }
 
-
+col.cent{
+  text-align: center;
+}
 
 
 
@@ -223,39 +264,63 @@ body.index {
 .container.bardo {
   /*background-color: #005f73 , background: #0d1117;*/
 
-  color: #00ff9c;
+  color: #00ff6a;
   background: radial-gradient(circle, #3379e2b9 0%, #000000 100%);
   border-radius: 20px;
   /* rounded corners */
   padding: 20px;
-  box-shadow: 0 0 15px rgba(231, 1, 1, 0.568), /* subtle glow */
-              inset 0 0 10px rgba(255, 255, 255, 0.05); /* inner highlight */
+  box-shadow: 0 0 20px rgba(231, 1, 1, 0.568),
+    /* subtle glow */
+    inset 0 0 10px rgba(255, 255, 255, 0.05);
+  /* inner highlight */
 }
 
-body.bardo{
+body.bardo {
   background-color: #0e0d0d;
 }
+
 .bardoback {
 
   background-image: url("./content/Main_Screen.jpg");
   background-size: 100% auto;
-  background-position-x: center; 
+  background-position-x: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;;
   position: relative;
   /* BardoExperiment Main Menu image created by Storm aka LZ Studios*/
 
 }
 
-iframe.sc{
-  position: relative; 
-  padding-bottom: 56%; 
+iframe.sc {
+  position: relative;
+  padding-bottom: 56%;
   height: 0;
 }
 
+.sndcld {
+  color: #cccccc;
+  text-decoration: none;
+}
 
+.divcld {
+  font-size: 10px;
+  color: #cccccc;
+  line-break: anywhere;
+  word-break: normal;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-family: Interstate, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
+  font-weight: 100;
+}
 
-
+.instapurp{
+  color: #7e63b1;
+}
+.instapurp:hover{
+  color: #e29024;
+  cursor: pointer;
+}
 
 
 /*--------------------------------------
@@ -298,20 +363,34 @@ iframe.sc{
   white-space: pre-line;
 }
 
-.project:hover img {opacity: 0.2;}
+.project:hover img {
+  opacity: 0.2;
+}
 
-.project:hover .console {opacity: 1;}
+.project:hover .console {
+  opacity: 1;
+}
 
-.log-ok {color: #00ff9c;}
+.log-ok {
+  color: #00ff9c;
+}
 
-.log-warn {color: #ffaa00;}
+.log-warn {
+  color: #ffaa00;
+}
 
-.log-error {color: #ff4d4d;}
+.log-error {
+  color: #ff4d4d;
+}
 
 @keyframes typing {
-  from {width: 0}
+  from {
+    width: 0
+  }
 
-  to {width: 100%}
+  to {
+    width: 100%
+  }
 }
 
 .console span {
@@ -323,5 +402,6 @@ iframe.sc{
 }
 
 .project:hover .console span {
-  animation: typing 1.5s steps(40, end) forwards, blinkCursor 0.4s step-end infinite;;
+  animation: typing 1.5s steps(40, end) forwards, blinkCursor 0.4s step-end infinite;
+  ;
 }
