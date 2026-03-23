@@ -218,6 +218,9 @@ img {
   font-family: "Copperplate Gothic", "Copperplate", fantasy;
 }
 
+summary:hover{
+  color:rgb(214, 129, 49);
+}
 /*--------------------------------------
 --------------------------------------
         index page stylesheet
