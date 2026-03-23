@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html class="inspogenerator">
+
+<head>
+    <title>Brandon [Snobino] Williams Portfolio</title>
+
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Portfolio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="inspogenerator  sofia">
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid d-flex">
+            <a class="navbar-brand" href="../index.html"><img
+                    src="https://devilcry3.github.io/Public/content/SnowBino_Creatins.png" alt="SnoBino Creations Logo"
+                    width="50" height="44"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Portfolio Artifacts
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Bardo_page.html">The Bardo Experiment</a></li>
+                            <li><a class="dropdown-item" href="####">Text Detection App</a></li>
+                            <li><a class="dropdown-item" href="InspoGen_page.html">AI based TTRPG class Insporation
+                                    Website</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">TTRPG Class Insperation Generator Live Website</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container parchment">
+        <div class="row mt-5">
+            <div class="col-md-3">
+            </div>
+
+            <div class="col-md-7 fanttext">
+                <H1>TTRPG Class Insporation Generator</H1>
+            </div>
+
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <H2 class="fanttext">OVERVIEW</H2>
+                <p>
+                </p>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+
+
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <p>The goal for this website was to examine the possibilities of what we could do with AI in a website
+                    format. This comes form an exploritive curiousity and the limited forms
+                    of usage people tend to have with AI. I have a affinity for table top roleplaying games, and have
+                    found from time to time unsure of what I may want to play next or for a short series.
+                    So I had the idea of a page that takes in several Parameters, inside of a strict prompt, to give
+                    some suggestions on what the user could potentially want to play even if the user did not realize
+                    it.
+                    The end result was pretty interesting, and honestly felt pretty consistent and fair. However the
+                    main prompt needed to achieve this is quite long and exhaustive and ended up being the key linch pin
+                    in achieving this.
+                    If you would like to see the prompt open the dropdown just below.
+                </p>
+                <details class="info-box">
+                    <summary>Fill in AI prompt for website</summary>
+                    <p>
+                        "Treat all of the following inputs literally and exactly as written. Do not substitute with
+                        similar or generic options.
+                        All responses must use classes, archetypes, magic types, and mechanics ONLY from the system
+                        specified below. Do NOT
+                        reference Dungeons & Dragons, Pathfinder, or any other RPG system. I need to create a character
+                        for the fantasy tabletop
+                        game [System], but I am struggling to decide on what class to play. I prefer a [Position]
+                        position in combat. I am
+                        interested in combat styles like [Style]. Regarding magic types I have a preference for [Magic].
+                        Please consider archetypes
+                        such as [Archetype]. Finally, also consider this as well in your decision: [UserData]. Which
+                        official classes in [System]
+                        best match my choices? Only suggest existing classes and do not invent new ones. FOR EACH
+                        suggested class, also generate
+                        3–5 fitting CHARACTER NAMES. Names must match the tone, magic source, and archetypes described.
+                        Names should be
+                        setting-appropriate fantasy names (not modern, not joke names). Do not reuse names across
+                        classes. " +
+
+                        If none of the listed classes match well, you may suggest a CONCEPT BUILD. Any concept build
+                        must be clearly labeled as
+                        such and must not be presented as an official class. (editionNote? ` If classes are for Dungeons
+                        and Dragons 5e edition
+                        please specify ${editionNote})."
+
+                        Output Rules:
+                        - List each class as a clear header
+                        - Under each class, include a "Suggested Character Names:" section
+                        - Provide 3–5 names per class
+                        - Keep names concise and readable
+                        ` + `\n\nOutput format preference: ${format}.`
+                    </p>
+                </details>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <h2 class="fanttext">Input sections</h2>
+                <ul>
+                    <li>
+                        <details>
+                            <summary>What TTRPG system are you using</summary>
+                            <ul>
+                                <p>Here I list a few standard and common options with some more niche but good systems
+                                    that people may play</p>
+                                <li>Dungeons & Dragons 5E</li>
+                                <li>Vagabond, Pulp fiction roleplaying game</li>
+                                <li>Pathfinder</li>
+                                <li>Old School Essentials</li>
+                            </ul>
+                        </details>
+                    </li>
+
+                    <li>
+                        <details>
+                            <summary>Where on a battlefield does the user want to be?</summary>
+                            <ul>
+                                <p>This falls into three main areas, with a fourth that chalks up to wherever
+                                    works/multiple.</p>
+                                <li>Vagabond, Pulp fiction roleplaying game</li>
+                                <li>Backliner, ranged consists of things like an archer/gunner/spellcaster</li>
+                                <li>Old School Essentials</li>
+                                <li>Finally a midliner, which consists of things like rogue. These types can work in
+                                    close or medium range sometimes preferring to move in and out of close range.</li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary>What role does the user like/want to fill in a party?</summary>
+                            <ul>
+                                <p>This feels pretty straight forward but falls into physical combat, spellcasting, a
+                                    mix, less combat and more supporting your allies, or anything. I left this for
+                                    multiple select for those that were considering there options but not every option
+                                </p>
+                                <li>Any, you are game for whatever</li>
+                                <li>Martial, this can be anything from a knight to an archer to a gunslinger</li>
+                                <li>Spellcaster, this is your Wizards, witch's, and Socerer types.</li>
+                                <li>SpellSword, consists of Paladins, magic knights, a mix of physical and magic</li>
+                                <li>Support, supports can be magical or non-magical. Bards, Clerics, druids to a degree
+                                    even</li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary>Does the user have preference on where the magic is coming from?</summary>
+                            <ul>
+                                <p>This section is really only for those that are curious about magic which is why the
+                                    first option is any or none.
+                                    As well as the fact that in some systems it can be flavor or a more specific class.
+                                    For example in D&D5E Celestial could be a
+                                    Paladin, Cleric, or even a warlock</p>
+                                <li>Any or None, you are game for whatever</li>
+                                <li>Eldritch, this refers to the strange and unexplained [a common depiction is Cthulu]
+                                </li>
+                                <li>Celestial, Angel/Aether/Angelic like beings or often associated to light or good
+                                </li>
+                                <li>Nature, as it sounds magic coming from nature or the natural properties of the world
+                                </li>
+                                <li>Bestowed by a god, is fairly self explanitory however a key distinction is not if it
+                                    is good or bad aligned god</li>
+                                <li>Bestowed by a powerful being, this could be receiving power from any powerful
+                                    person/being/godlike/demigodlike creature. Even mythical creature or monster</li>
+                                <li>Ki or Chi, Often treated as the same thing. More the power within the body or soul
+                                    is less magic and more a spiritual power</li>
+                                <li>Arcane, the stereotypical depiction of magic from wizards or even in some cases
+                                    sorcerers</li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary>Are their any archetypes or themes the user desire or has in mind?</summary>
+                            <ul>
+                                <p>Some systemes utilize archetypes or themes in their character creation or when a
+                                    player is creating a character
+                                    they will use one as a outline for how they build their character. So this is the
+                                    perfect spot for those, the AI
+                                    then uses those in conjunction with everything else to try and make its suggestions.
+                                </p>
+                                <li>Each entry should be broken up by a comma so it knows they are seperate points</li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary>Any extra or tertiary information the user wants considered?</summary>
+                            <ul>
+
+                                <li>This is for anything that doesn't perfectly fit into the other areas, or
+                                    thought/guidelines the user has or wants considered.
+                                </li>
+                                <li>For example maybe something the user knows they do not want to play or want
+                                    suggested.</li>
+                                <li>Perhaps even end goal and/or story arcs they have considered.</li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary>Finally how much detail or information is desired?</summary>
+                            <ul>
+                                <p>This is to help manage the text response that is give to the user. Some may want
+                                    thorough explanations with suggestions or direction on
+                                    progressive devlopment, or just nothing else then a simple list.
+                                </p>
+                                <li>First options is the full detailed response from AI. Usually consists of a list of
+                                    suggestions, why those suggestions, and what it considers the most accurate
+                                    suggestion possibly more a build then single class.</li>
+                                <li>Condensed, cuts a lot of that fat, getting down to the suggested list, and what
+                                    would be most accurate possibilities. </li>
+                                <li>Nothing but classes is pretty to the point, it will just give you a simple condensed
+                                    list of classes and virtually nothing else.</li>
+                                <li>Expanded takes what full detailed has and then further extrapolates on the ideas.
+                                    sometimes giving ideas for story archs for the character
+                                    or even more builds that could additionally work. I have even in some cases suggest
+                                    types of gods or power beings as outlines to develop a character further.
+                                </li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary>Response Box</summary>
+                            <ul>
+                                <p>After pressing submit and some time has passed for the openAI to receive the
+                                    information and process the information will be sent back to you in the box below
+                                    submit.
+                                </p>
+                                <li>The copy button when pressed puts all text into your clipboard so you can paste it
+                                    elsewhere</li>
+                                <li>The box itself starts off as a condensed box with a scroll bar. However when Expand
+                                    is check the text box will open to full size.
+                                    this gives the user options in how they wish to view the content.
+                                </li>
+                            </ul>
+                        </details>
+                    </li>
+
+                </ul>
+
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+                <iframe width="315" height="560" src="https://www.youtube-nocookie.com/embed/CGqIzH1KeYE"
+                    title="YouTube Short" frameborder="0" referrerpolicy="strict-origin-when-cross-origin"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <h3>Example responses</h3>
+                <ul>
+                    <p>Here are examples of responses, I will list the selected parameters and then add drop
+                        downs with the responses so they can be compared.
+                    </p>
+                    <li>Vagabond</li>
+                    <li>Frontliner</li>
+                    <li>Martial, spellsword, support</li>
+                    <li>Eldritch, celestial, bestowed by a powerful</li>
+                    <li>Outside help, unknown variable, chipper with a dark secret</li>
+                    <li>n/a</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <details class="info-box">
+                    <summary>Full Length</summary>
+                    <p>Based on your preferences for a Frontliner role in combat, interest in Martial, SpellSword, and
+                        Support combat styles, and a focus on magic types such as Eldritch, Celestial, and powers
+                        bestowed by a powerful being, combined with archetypes like Outside Help, Unknown Variable, and
+                        Chipper with a Dark Secret, the ideal Vagabond classes are narrowed as follows:
+
+                        <br></br>
+
+                        ### Magus
+                        **Reasoning:**
+                        The Magus class embodies the SpellSword archetype perfectly—combining martial prowess with
+                        arcane magic. Magi often draw on Eldritch or other arcane energies, sometimes including those
+                        granted by external powerful forces. This fits well with your interest in Eldritch and Bestowed
+                        magic, and as a frontliner they engage directly in melee combat. The Magus can also support
+                        allies through arcane buffs or control magic. The archetypes of Outside Help (magical patron or
+                        entity) and Unknown Variable (arcane mysteries) align well with this class.
+
+                        **Suggested Character Names:**
+                        - Eryndor Vael
+                        - Haleth Morrin
+                        - Sylas Faelan
+                        - Aerin Thalorin
+                        - Calev Draven
+
+                        <br></br>
+
+                        ### Vanguard
+                        **Reasoning:**
+                        The Vanguard is a dedicated frontliner martial class, excelling in absorbing damage and leading
+                        charges. While less inherently magical than Magus, Vanguards can be flavored with Celestial or
+                        Bestowed magic influences, especially if you consider their power derived from a higher being or
+                        divine source. This class can fit the Outside Help archetype, where their strength is granted or
+                        enhanced by celestial patrons or mysterious benefactors. The Vanguard’s support role is tactical
+                        and defensive, contributing to battlefield control.
+
+                        **Suggested Character Names:**
+                        - Kaelen Drasith
+                        - Morwen Ardent
+                        - Lioren Tamsin
+                        - Vaeris Solen
+                        - Daira Vhalen
+
+                        <br></br>
+
+                        ### Revelator
+                        **Reasoning:**
+                        Revelators specialize in eldritch and celestial magic gifts, often bestowed by powerful
+                        otherworldly beings. They are frontline spellcasters who blend arcane power with a mysterious
+                        destiny or purpose. This makes them a fantastic match for the Eldritch and Celestial magic
+                        preferences, and the archetype of the Unknown Variable or Outside Help fits naturally—these
+                        characters carry secrets or are chosen for reasons beyond their control. While not as martial as
+                        Magus or Vanguard, Revelators can be build to engage front-line areas by manifestation of
+                        support and offensive magic.
+
+                        **Suggested Character Names:**
+                        - Isolde Varyn
+                        - Thalor Einar
+                        - Meriel Kaidren
+                        - Zareth Volun
+                        - Valen Dreth
+
+                        <br></br>
+
+                        ### Fighter
+                        **Reasoning:**
+                        Purely martial, Fighters make excellent front-liners and can be flavored with a spellcasting
+                        edge—though less inherent magical ability than Magus or Revelator, the Fighter can fit a chipper
+                        frontliner who hides a dark secret, such as a magical curse or an eldritch pact. Choosing a
+                        Fighter with a narrative of Bestowed power aligns well with your desires if you emphasize story
+                        over raw magic mechanics.
+
+                        **Suggested Character Names:**
+                        - Garrin Holt
+                        - Fenric Solas
+                        - Oren Talric
+                        - Daven Kessir
+                        - Liras Vendel
+
+                        <br></br>
+
+                        ### Sorcerer
+                        **Reasoning:**
+                        Sorcerers deliver powerful eldritch and magical energies directly granted by their bloodline or
+                        an existential power. While not traditionally frontliners in a heavy armor sense, Sorcerers in
+                        Vagabond can be built with a focus on direct combat through spellcasting prowess and magical
+                        endurance. This suits your interest in Eldritch/Celestial magic and outside powerful beings
+                        bestowing power. Archetypes such as Unknown Variable or Outside Help are naturally expressed by
+                        Sorcerers.
+
+                        **Suggested Character Names:**
+                        - Naelis Verin
+                        - Syraen Valthor
+                        - Caelen Orith
+                        - Thessa Mariel
+                        - Jareth Solen
+
+                        <br></br>
+
+                        ## Summary and Recommendations
+                        - If you want a true **SpellSword frontliner** with Eldritch magic: **Magus** is your best
+                        choice.
+                        - For solid **martial frontliners with potential divine or bestowed flavor**: **Vanguard** or
+                        **Fighter**.
+                        - For a frontliner blending **Support and mysterious Celestial/Eldritch magic**: **Revelator**
+                        or **Sorcerer**.
+
+                        <br></br>
+
+                        If none fully meet all requirements, a **CONCEPT BUILD** could be a Magus with a Vanguard
+                        subclass or specific feats to increase durability and front-line presence, flavored by Eldritch
+                        patronage or Celestial blessings.
+
+                        Please let me know if you want detailed role abilities for any particular class or tips on
+                        archetype customization!
+
+                    </p>
+                </details>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <details class="info-box">
+                    <summary>Condensed</summary>
+                    <p>### Magus
+                        Best match for Martial + SpellSword with Eldritch or Celestial magic, embodies magic bestowed by
+                        powerful beings. Fits Frontliner and complex archetypes (Outside help, unknown variable, chipper
+                        with secret).
+
+                        Suggested Character Names:
+                        - Caelen Vireo
+                        - Thalric Dawnshard
+                        - Sereth Malcorin
+                        - Elara Vossan
+                        - Draven Lyshar
+
+                        <br></br>
+
+                        ### Vanguard
+                        Frontline martial fighters often blending physical combat with enhancements. Can fit Celestial
+                        or Bestowed magic interpretation to empower sword and shield style. Good for Support + Martial
+                        roles with an aura of mystery or hidden power.
+
+                        Suggested Character Names:
+                        - Orin Talvoss
+                        - Kaelen Draymour
+                        - Laeric Varn
+                        - Brynn Solhar
+                        - Isolde Merran
+
+                        <br></br>
+
+                        ### Sorcerer
+                        Innate magic user whose power can be Eldritch or Celestial in nature. While generally less
+                        Martial, can be flavored as SpellSword or Frontliner wielding direct magic in close combat.
+                        Suits archetypes involving dark secrets or powers granted by beyond.
+
+                        Suggested Character Names:
+                        - Azryn Velthar
+                        - Maris Thalorien
+                        - Kaelen Doreth
+                        - Selis Valeth
+                        - Varyn Caelorn
+
+                        <br></br>
+
+                        ### Revelator
+                        Mystic class typically wielding knowledge and spiritual power. Fitting for Celestial or Eldritch
+                        magic, with a theme of Outside help and unknown motives. Can support allies and fight front and
+                        center with magic-infused combat.
+
+                        Suggested Character Names:
+                        - Elyndor Vashan
+                        - Selwyn Coreth
+                        - Thessa Morlin
+                        - Valen Drehar
+                        - Ilyra Vesh
+
+                        <br></br>
+
+                        If none of these fully satisfy, consider:
+
+                        ### CONCEPT BUILD: Eldritch SpellSword Frontliner
+                        Martial Fighter infused deeply with Eldritch or Celestial magic granted by an ancient patron or
+                        powerful entity. Balances frontline combat, spells, and support, fitting chipper exterior
+                        concealing dark secrets.
+
+                        (But since you asked only for existing classes, above are the best matches.)
+
+                    </p>
+                </details>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <details class="info-box">
+                    <summary>Just Classes</summary>
+                    <p>**Magus**
+                        Suggested Character Names:
+                        - Caelen Vorin
+                        - Syraeth Nhal
+                        - Thalorin Krest
+                        - Melyndra Vaer
+                        - Jarvok Eldryn
+                        <br></br>
+                        **Vanguard**
+                        Suggested Character Names:
+                        - Dreven Kael
+                        - Soryn Halvek
+                        - Alavira Tresh
+                        - Brennor Khost
+                        - Vaelin Drath
+                        <br></br>
+                        **Revelator**
+                        Suggested Character Names:
+                        - Elsin Vareth
+                        - Miralda Celyn
+                        - Orsin Thael
+                        - Venara Elist
+                        - Caldrin Morv
+                        <br></br>
+                        **Sorcerer**
+                        Suggested Character Names:
+                        - Althas Drevan
+                        - Lysara Velis
+                        - Doruin Xhal
+                        - Seris Telmor
+                        - Nirael Zosh
+                        <br></br>
+                        **Witch**
+                        Suggested Character Names:
+                        - Sylrae Morwen
+                        - Varina Kelth
+                        - Elthria Nyss
+                        - Kalyndra Veil
+                        - Maelis Draen
+                    </p>
+                </details>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-12">
+                    <details class="info-box">
+                        <summary>Expanded</summary>
+                        <p>Based on your preferences for a Frontliner role with Martial, SpellSword, and Support combat
+                            styles, your interest in Eldritch, Celestial, or magic bestowed by a powerful being, and
+                            archetypes involving outside help, unknown variables, and a chipper demeanor masking a dark
+                            secret, the following official Vagabond classes best match your choices:
+
+                            <br></br>
+
+                            ### Magus
+                            **Why:**
+                            The Magus in Vagabond blends martial prowess with eldritch or other arcane magic, perfectly
+                            fitting the SpellSword niche. They often harness eldritch or bestowed magic, acting as
+                            frontliners who wield both blade and spell. The Magus archetype easily embodies the unknown
+                            variable or outside-help archetype, as their magic can come from ancient, mysterious patrons
+                            or entities. They can also carry a chipper attitude hiding dark secrets about their power
+                            source.
+                            <br></br>
+                            **Suggested Character Names:**
+                            - Sylas Vaelthorn
+                            - Meridith Kael’ren
+                            - Vaelen Drethar
+                            - Liora Eshwyn
+                            - Caelen Morvash
+
+                            <br></br>
+
+                            ### Revelator
+                            **Why:**
+                            Revelators are deeply connected to Celestial or divine magic, often granted by powerful
+                            beings beyond mortal ken. They serve as frontline support combatants who channel these
+                            lordly powers, blending martial abilities with holy or otherworldly magic. Their association
+                            with outside help from powerful entities fits well with your archetypes, and they may hide a
+                            dark secret related to their divine source while maintaining a bright, hopeful demeanor.
+                            <br></br>
+                            **Suggested Character Names:**
+                            - Thalanor Brightveil
+                            - Isara Vyn’lish
+                            - Elandros Kareth
+                            - Zephyra Solendyr
+                            - Jorren Faelwind
+
+                            <br></br>
+
+                            ### Vanguard
+                            **Why:**
+                            The Vanguard is a martial frontliner specializing in taking the brunt of combat’s fury, and
+                            when combined with magic (usually bestowed or enhanced from some external force), they can
+                            serve as a “chip[per] with a dark secret” archetype who supports allies through sheer
+                            defensive might or power granted by outside sources. While less direct in eldritch or
+                            celestial magic than Magus or Revelator, some Vanguards might be empowered by pacts or
+                            blessings making them effective SpellSword-like fighters.
+                            <br></br>
+                            **Suggested Character Names:**
+                            - Roderic Thane
+                            - Malric Orren
+                            - Drena Solkar
+                            - Brannic Halvra
+                            - Kelra Vorinth
+
+                            <br></br>
+
+                            ### Sorcerer
+                            **Why:**
+                            Sorcerers tap into raw, often unpredictable magic which can be eldritch or bestowed by
+                            unknown or powerful forces. While not a traditional martial frontliner, certain builds
+                            emphasize melee combat mixed with arcane blasts, fitting the SpellSword mold and the
+                            archetype of an unknown variable with dark secrets. Their magic source may be eldritch, and
+                            you might flavor their character as chipper outwardly but tormented within.
+                            <br></br>
+                            **Suggested Character Names:**
+                            - Caelis Verath
+                            - Neristha Valen
+                            - Garron Dulvek
+                            - Sylindra Meren
+                            - Fenrik Haldis
+
+                            <br></br>
+
+                            ### CONCEPT BUILD: Eldritch SpellSword Frontliner
+                            **Class Mix Suggestion:**
+                            A hybrid concept blending the Magus class for martial and eldritch spellcasting, with
+                            thematic elements of the Revelator’s celestial-bestowed magic and the Vanguard’s frontline
+                            durability. This build focuses on a character wielding a weapon empowered by eldritch or
+                            celestial forces, fighting at the front while offering both offensive and subtle support.
+                            Archetypes may include "Outside Help" (a patron or divine entity) and "Chipper with a Dark
+                            Secret" (maintaining a sunny exterior despite a curse or tragic past).
+
+                            <br></br>
+
+                            If you want strictly official classes, Magus and Revelator fit your preferences best for
+                            combining martial prowess and eldritch/celestial magic in frontliner roles, with Vanguard
+                            offering a more martial-focused alternative, and Sorcerer providing more arcane
+                            unpredictability and an unknown variable flair. The character names align with a classic
+                            fantasy tone appropriate to Vagabond’s setting and your archetype choices.
+                        </p>
+                    </details>
+                </div>
+            </div>
+
+
+        </div>
+
+        <script>
+
+        </script>
+</body>
+
+</html>

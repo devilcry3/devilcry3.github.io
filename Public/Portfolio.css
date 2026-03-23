@@ -323,6 +323,46 @@ iframe.sc {
 }
 
 
+/*--------------------------------------------
+-------------------------------------------
+       AI Website insporation Generator
+-------------------------------------------
+-------------------------------------------*/
+
+
+html.inspogenerator {
+  background-color: rgba(150, 47, 47, 0.934);
+}
+
+.container.parchment {
+   color: #d8d8d8;
+  background: radial-gradient(circle,rgba(170, 147, 107, 0.9), rgba(44, 38, 28, 0.9));
+  border: 1px solid #e6c36b;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+  /* rounded corners */
+  padding: 20px;
+  box-shadow: 0 10px 35px rgba(206, 88, 10, 0.568),
+    /* subtle glow */
+    inset 0 0 10px rgba(255, 255, 255, 0.05);
+  /* inner highlight */
+}
+
+body.inspogenerator {
+  background: #ebd5a8;
+  background-image: url("./content/agedparchment.png");
+  background-size: 100% auto;
+  /* stretch width only */
+  background-repeat: repeat;
+  background-size: auto;
+  /* <a href='https://pngtree.com/freebackground/aged-parchment-paper-with-darkened-edges-and-intersecting-lines-creating-vintage-antique-historical-texture_19137841.html'>free background photos from pngtree.com/</a> */
+
+}
+summary{
+    font-weight: bold;
+  font-style: italic;
+}
+
 /*--------------------------------------
 -------------------------------------
        CONSOLE EFFECT
