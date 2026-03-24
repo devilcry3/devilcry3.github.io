@@ -38,11 +38,9 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active"  href="#">Resume/Cover Letter</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
+
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
@@ -50,13 +48,13 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="Bardo_page.html">The Bardo Experiment</a></li>
-                            <li><a class="dropdown-item" href="Text Recognition App.html">Text Recognition App</a></li>
+                            <li><a class="dropdown-item" aria-current="page" href="Text Recognition App.html">Text Recognition App</a></li>
                             <li><a class="dropdown-item" href="InspoGen_page.html">AI based TTRPG class Insporation
                                     Website</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">TTRPG Class Insperation Generator Live Website</a>
+                            <li><a class="dropdown-item" href="#">TTRPG Class Insperation Generator Live Website [coming soon]</a>
                             </li>
                         </ul>
                     </li>
@@ -119,7 +117,7 @@
                         doing a lot of the back end function development, were Oiler
                         handled much of the UI implementation or fine tuning.
 
-                        <br></br>
+                        
 
                     </p>
 
@@ -141,8 +139,17 @@
                             this app:</h2>
                         </p>The various screen views, what they control and how they Interact,
                         most all of the ViewController script, video embedding, the results page formatting, as well as
-                        the
-                        ability to utilize a CSV as the data source.
+                        the ability to utilize a CSV as the data source.
+                        <br></br>
+                        A row example from the csv we is [Name, Summary, Youtube link, Description], with this I can go further in how the csv works in this app.
+                        When the user presses the camera button the app immitates a snap shot freezing the screen view, it then gives a blue drawer with every Name
+                        it saw and recognized from the CSV. It firsts detects the text then sweeps through the first column of the CSV to see if it recognizes or detects said name.
+                        Once it has it loads that name to a variable, then parse selects teh youtube link. This link then is ran through a section of code to pull the links ID, the
+                        ID is then used in a URL code set to create and display a embeded youtube video. Now that it knows who we are looking at, and the associated video it creates
+                        a clickable button displaying the name. When the user presses the button a new screen is created displaying the name at the top, A video player based off the URL
+                        information, then a scrollable text box. The text box first displays the summary section, this should consist of describing the person/group or a statement from them. In the
+                        top right corner of the text box is a toggle button, pressing that button will open the description section. The description section will typically be a description of the 
+                        video or a direct transcript of what is said or happening in the video. The intention was to be as inclusive for auditorily impaired users.
                         </p>
                     </div>
                     <div class="col-md-6">
@@ -153,7 +160,7 @@
                 </div>
                 <div class="row mt-5">
                     <div class="col-md-12">
-                        <p>In fact while trying to do a screen recording for this portfolio I found that the video
+                        <p>While trying to do a screen recording for this portfolio I found that the video
                             player set up using Webkit
                             and embed had hugely depricated since IOs18 and Ios26. This occured as a result of both
                             Youtube's and Apple's security settings
