@@ -2,7 +2,7 @@
 <html class="inspogenerator">
 
 <head>
-    <title>Text Recognition Artifact</title>
+    <title>Resume/Cover Letter</title>
 
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <meta name="referrer" content="strict-origin-when-cross-origin">
@@ -38,7 +38,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Resume/Cover Letter</a>
+                        <a class="nav-link active" aria-current="page" href="ResCov.html">Resume/Cover Letter</a>
                     </li>
 
                     <li class="nav-item dropdown">
@@ -48,7 +48,7 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="Bardo_page.html">The Bardo Experiment</a></li>
-                            <li><a class="dropdown-item" aria-current="page" href="Text Recognition App.html">Text
+                            <li><a class="dropdown-item"  href="Text Recognition App.html">Text
                                     Recognition App</a></li>
                             <li><a class="dropdown-item" href="InspoGen_page.html">AI based TTRPG class Insporation
                                     Website</a></li>
@@ -80,125 +80,39 @@
 
                 </div>
                 <div class="row mt-5">
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                         <H2 class="fanttext">OVERVIEW</H2>
                         <p>
+                            This is page is dedicated to my resume and cover letter. You can view either here as a PDF, or download them as needed.
+                            Please free to review them and or reach out, I am always interested in hearing about new and interesting things. I will respond at my
+                            earliest availability.
                         </p>
-                    </div>
-                    <div class="col-md-1"></div>
-                    <div class="col-md-5">
-
-
                     </div>
                 </div>
                 <div class="row mt">
                     <div class="col-md-12">
-                        <p>This is a demo application proposal I worked on during the summer of 2025. The goal for it
-                            was an
-                            app that can view a name inscribed on brick
-                            , then reference a database searching and retreiving that name and associated information.
-                            The
-                            logic path being, Camera, scan name, does name register in
-                            database?, if yes, pull name/Video link/Summary/Description, Create new page and display
-                            this
-                            information including a embeded video. This project was a proposal
-                            demo for a local Anne Frank memorial, the idea was to be able to scan a name and the user
-                            could
-                            see a potential video discussing the person. Alongside that
-                            text giving further insite to the individual or group, I additionally added a Summary
-                            section
-                            that would act as a transcript for the audio impaired.
-                        </p>
+                        <h2>Resume</h2>
+
+                        <a href="files/Brandon WilliamsaUpdated-Resume032026.pdf" download>
+                            Download PDF
+                        </a>
+
+                        <iframe src="files/Brandon WilliamsaUpdated-Resume032026.pdf" width="100%"
+                            height="600"></iframe>
+
+
                     </div>
                 </div>
                 <div class="row mt-5">
-                    <div class="col-md-6">
-                        <h2 class="fanttext">My Role</h2>
-                        <p>
-                            When it came to this project Ty set up a super basic application using Apple's Vision pro
-                            system
-                            for text detection. It launched to a home screen
-                            then when the camera was opened it had a transparant box that showed all text it detects.
+                    <div class="col-md-12">
+                        <h2>Cover Letter</h2>
 
-                            <br></br> From there Oiler and I watched some simple tutorials convering some uses and basic
-                            kit
-                            set ups using Xcode/Swift in Apple development in order
-                            to get some hands on as we started off with 0 Apple development experience. Over time I
-                            ended up
-                            doing a lot of the back end function development, were Oiler
-                            handled much of the UI implementation or fine tuning.
+                        <a href="files/Brandon Williamsa CoverLetter_032026.pdf" download>
+                            Download PDF
+                        </a>
 
-
-
-                        </p>
-
-
-                    </div>
-
-                    <div class="col-md-1"></div>
-                    <div class="col-md-5">
-                        <iframe width="315" height="560"
-                            src="https://youtube.com/shorts/1LbrNAUb09A?si=AWhVSoSPb-Ki-q3E" title="YouTube Short"
-                            frameborder="0" referrerpolicy="strict-origin-when-cross-origin"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen>
-                        </iframe>
-
-                    </div>
-                    <div class="row mt-5">
-                        <div class="col-md-6">
-                            <h2>Some of the systems and logic I worked on or implemented during the delopment of
-                                this app:</h2>
-                            </p>The various screen views, what they control and how they Interact,
-                            most all of the ViewController script, video embedding, the results page formatting, as well
-                            as
-                            the ability to utilize a CSV as the data source.
-                            <br></br>
-                            A row example from the csv we is [Name, Summary, Youtube link, Description], with this I can
-                            go further in how the csv works in this app.
-                            When the user presses the camera button the app immitates a snap shot freezing the screen
-                            view, it then gives a blue drawer with every Name
-                            it saw and recognized from the CSV. It firsts detects the text then sweeps through the first
-                            column of the CSV to see if it recognizes or detects said name.
-                            Once it has it loads that name to a variable, then parse selects teh youtube link. This link
-                            then is ran through a section of code to pull the links ID, the
-                            ID is then used in a URL code set to create and display a embeded youtube video. Now that it
-                            knows who we are looking at, and the associated video it creates
-                            a clickable button displaying the name. When the user presses the button a new screen is
-                            created displaying the name at the top, A video player based off the URL
-                            information, then a scrollable text box. The text box first displays the summary section,
-                            this should consist of describing the person/group or a statement from them. In the
-                            top right corner of the text box is a toggle button, pressing that button will open the
-                            description section. The description section will typically be a description of the
-                            video or a direct transcript of what is said or happening in the video. The intention was to
-                            be as inclusive for auditorily impaired users.
-                            </p>
-                        </div>
-                        <div class="col-md-6">
-                            <img src="https://devilcry3.github.io/Public/content/AnnFrkScreenShot.png" class="img-fluid"
-                                alt="Text Recognitions results screen. It has a video player taking up 45% of top half of screen, bottom half is a scrolling text box with a toggle.
-                                video displayed is the video A Day at the Zoo.">
-                        </div>
-                    </div>
-                    <div class="row mt-5">
-                        <div class="col-md-12">
-                            <p>While trying to do a screen recording for this portfolio I found that the video
-                                player set up using Webkit
-                                and embed had hugely depricated since IOs18 and Ios26. This occured as a result of both
-                                Youtube's and Apple's security settings
-                                getting stricter. It ended up taking a lot of trial and error to finally get it working
-                                properly, experiencing a seesaw between
-                                Error 153 (A almost who are you check), and Error 152-4 (A kind of spoofing/hacking the
-                                handshake check). Eventually I was able to
-                                get the video player to work again by utilizing iframe as a official access, and giving
-                                it a
-                                origin domain location utilizing a face Website
-                                this then caused it to route and believe it was being implemented correctly. Since it
-                                technically is being utilized properly this is without issue,
-                                However I could not utilize youtube as the website place holder as the system then would
-                                check for its own log in cookies.
-                            </p>
-                        </div>
+                        <iframe src="files/Brandon Williamsa CoverLetter_032026.pdf" width="100%"
+                            height="600"></iframe>
                     </div>
                 </div>
 
@@ -208,9 +122,15 @@
             </div>
         </div>
 
-        <script>
 
-        </script>
+
+
+    </div>
+    </div>
+
+    <script>
+
+    </script>
 </body>
 
 </html>
