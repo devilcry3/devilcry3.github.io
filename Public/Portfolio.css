@@ -406,6 +406,48 @@ summary{
   font-style: italic;
 }
 
+
+
+/*-------------------------------------
+-------------------------------------
+       Resume and cover letter page
+--------------------------------------
+-------------------------------------*/
+.container.rescon {
+  /*background-color: #005f73 , background: #0d1117;*/
+
+  color: #d1d1d1;
+  background: radial-gradient(circle, #000000d5 0%, #5a5a5a94 100%);
+  border-radius: 20px #01003f;
+  /* rounded corners */
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(67, 46, 95, 0.568),
+    /* subtle glow */
+    inset 0 0 10px rgba(255, 255, 255, 0.05);
+  /* inner highlight */
+}
+
+body.resbck{
+
+      background-image: repeating-conic-gradient(
+    #080013 0deg 15deg,
+    #000000 12deg 24deg
+
+  );
+}
+
+.rescov {
+
+
+  background-size: 100% auto;
+ 
+  background-repeat: repeat;
+  
+  position: relative;
+  /* BardoExperiment Main Menu image created by Storm aka LZ Studios*/
+
+}
+
 /*--------------------------------------
 -------------------------------------
        CONSOLE EFFECT
