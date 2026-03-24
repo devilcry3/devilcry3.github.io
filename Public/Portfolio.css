@@ -127,31 +127,13 @@ summary:hover { color: rgb(214,129,49); }
   box-shadow: 0 0 15px rgba(55,230,84,0.568), inset 0 0 10px rgba(255,255,255,0.05);
 }
 
-
+body.index {
+  background-image: url("./content/Matrix wallpaper.gif");
+}
 
 .col.cent { text-align: center; }
 
-html, body {
-  height: 100%;
-  margin: 0;
-}
 
-.video-background video {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-}
-
-.container.index {
-  position: relative;
-  z-index: 1;
-  color: white;
-  padding: 20px;
-}
 
 /*--------------------------------------
         Bardo Experiment
