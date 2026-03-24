@@ -221,6 +221,12 @@ img {
 summary:hover{
   color:rgb(214, 129, 49);
 }
+
+div.bolic{
+  font-weight: bold;
+  font-style: italic;
+}
+
 /*--------------------------------------
 --------------------------------------
         index page stylesheet
@@ -324,6 +330,40 @@ iframe.sc {
   color: #e29024;
   cursor: pointer;
 }
+
+
+/*--------------------------------------------
+-------------------------------------------
+       Text Recognition App
+-------------------------------------------
+-------------------------------------------*/
+
+
+.container.anfr {
+   color: #d8d8d8;
+  background: radial-gradient(circle,rgba(43, 128, 154, 0.882), rgba(44, 38, 28, 0.9));
+  border: 1px solid #e6716b;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+  /* rounded corners */
+  padding: 20px;
+  box-shadow: 0 10px 35px rgba(10, 36, 206, 0.568),
+    /* subtle glow */
+    inset 0 0 10px rgba(255, 255, 255, 0.05);
+  /* inner highlight */
+}
+
+body.anfr {
+  background-color: #ebd5a8;
+  background-image: repeating-conic-gradient(
+    #399946d7 0deg 10deg,
+    #4f8aa7 10deg 20deg,
+    #d5bf4e 20deg 30deg,
+    #d87a3b 30deg 40deg
+  );
+}
+  /* <a href='https://pngtree.com/freebackground/aged-parchment-paper-with-darkened-edges-and-intersecting-lines-creating-vintage-antique-historical-texture_19137841.html'>free background photos from pngtree.com/</a> */
+
 
 
 /*--------------------------------------------
